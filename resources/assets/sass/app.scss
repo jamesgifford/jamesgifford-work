@@ -8,7 +8,119 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+a {
+    color: inherit;
+    font-weight: bold;
+}
+
+a:hover {
+    color: inherit;
+}
+
+form label {
+    display: none;
+}
+
+.btn-primary {
+    background-color: #F9522D;
+    border-color: #F9522D;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #C34432;
+    border-color: #C34432;
+}
+
+.btn-outline-primary {
+    border-color: #F9522D;
+    color: #F9522D;
+}
+
+.btn-outline-primary:hover {
+    background-color: #F9522D;
+    border-color: #F9522D;
+    color: #fff;
+}
+
+
+.navbar-brand img {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    width: 2.8rem;
+}
+
+.navbar-brand span {
+    display: inline-block;
+    float: left;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    margin-left: 1rem;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+
+.date-icon {
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin: 0.5em auto 0;
+    max-width: 4.6rem;
+    position: relative;
+    text-align: center;
+}
+
+.date-icon .month {
+    background: #F9522D;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+
+.date-icon .day {
+    border: 1px solid #F9522D;
+    border-width: 0 1px;
+    display: block;
+    font-size: 1.6rem;
+    margin: 0;
+    position: relative;
+}
+
+.date-icon .year {
+    border: 1px solid #F9522D;
+    color: #F9522D;
+    display: block;
+}
+
+
+.date-text {
+    font-style: italic;
+}
+
+p.subtitle {
+    font-style: italic;
+}
+
+#blog-preview p, #blog-page p, #work-preview p, #work-page p, #project-preview p, #project-page p {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+#work-preview img, #work-page img {
+    max-height: 7rem;
+    max-width: 8rem;
+}
+
+footer {
+    color: #999;
+}
+
+.footer-contact {
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
 }

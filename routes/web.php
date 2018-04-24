@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@index');
+
+Route::get('work', 'PageController@work');
+
+Route::get('contact', 'ContactController@index');
+Route::post('contact', 'ContactController@send');
