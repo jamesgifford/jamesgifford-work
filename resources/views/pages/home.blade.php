@@ -66,7 +66,7 @@
                 <img class="img-fluid mx-auto" src="/img/{{ $post->image }}" />
             </div>
             <div class="col-md-10 mb-3">
-                <h2><a href="/work/{{ $post->slug }}">{{ $post->title }}</a></h2>
+                <h2><a href="/work/#{{ $post->slug }}">{{ $post->title }}</a></h2>
                 <p class="lead">{!! $post->first_paragraph !!}</p>
             </div>
         </div>

@@ -11,7 +11,7 @@
         </div>
         
     @foreach ($workPosts as $post)
-        <div class="row my-5">
+        <div id="{{ $post->slug }}" class="row my-5">
             <div class="col-md-2 text-center">
                 <img class="img-fluid mx-auto mb-3" src="/img/{{ $post->image }}" />
             </div>
