@@ -12,6 +12,7 @@ class CoreDatabaseSeeder extends Seeder
     public function run()
     {
         // Core seeders to run
-        // $this->call(CoreSeeder::class);
+        $this->call(CoreBlogPostSeeder::class);
+        $this->call(CoreWorkPostSeeder::class);
     }
 }

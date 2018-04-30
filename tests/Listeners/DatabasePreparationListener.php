@@ -27,7 +27,7 @@ class DatabasePreparationListener implements TestListener
      *
      * @var array
      */
-    private $afterSeeders = ['DevDatabaseSeeder'];
+    private $afterSeeders = ['DevDatabaseSeeder', 'CoreDatabaseSeeder'];
 
     /**
      * A test suite has started.

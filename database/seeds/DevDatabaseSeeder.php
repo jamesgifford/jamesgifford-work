@@ -12,6 +12,6 @@ class DevDatabaseSeeder extends Seeder
     public function run()
     {
         // Dev seeders to run
-        // $this->call(DevSeeder::class);
+        $this->call(DevPostSeeder::class);
     }
 }
