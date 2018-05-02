@@ -10498,12 +10498,19 @@ p.subtitle {
   max-width: 8rem;
 }
 
+#projects-preview img,
+#projects-page img {
+  max-height: 7rem;
+  max-width: 8rem;
+}
+
 footer {
   color: #999;
 }
 
 .footer-contact {
   font-size: 2rem;
+  margin-top: 1rem;
   padding: 1rem 2rem;
 }
 

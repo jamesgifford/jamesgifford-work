@@ -80,7 +80,7 @@
     </div> <!-- /container -->
 </div>
 
-<div id="project-preview" class="py-5 d-none">
+<div id="projects-preview" class="py-5">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
@@ -91,12 +91,12 @@
     @foreach ($projectPosts as $post)
         <div class="row my-5">
             <div class="col-md-2 d-none d-md-block">
-                <img class="img-fluid mx-auto" src="/img/logo.png" />
+                <img class="img-fluid mx-auto" src="/img/{{ $post->image }}" />
             </div>
             <div class="col-md-10">
-                <h2><a href="/projects/{{ $post->slug }}">{{ $post->title }}</a></h2>
+                <h2><a href="/projects/#{{ $post->slug }}">{{ $post->title }}</a></h2>
                 <div class="date-text d-md-none">{{ $post->published_date }}</div>
-                <p class="lead">{{ $post->summary }}</p>
+                <p class="lead">{!! $post->first_paragraph !!}</p>
             </div>
         </div>
     @endforeach

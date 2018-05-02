@@ -32,7 +32,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/work">Work</a>
                         </li>
-                        <li class="nav-item d-none">
+                        <li class="nav-item">
                             <a class="nav-link" href="/projects">Projects</a>
                         </li>
                         <li class="nav-item d-none">

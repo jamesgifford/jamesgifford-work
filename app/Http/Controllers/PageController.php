@@ -39,4 +39,18 @@ class PageController extends Controller
             'workPosts' => $workPosts
         ]);
     }
+
+    /**
+     * Display the projects page.
+     *
+     * @return void
+     */
+    public function projects()
+    {
+        $projectPosts = Post::project()->get();
+
+        return view('pages.projects')->with([
+            'projectPosts' => $projectPosts
+        ]);
+    }
 }

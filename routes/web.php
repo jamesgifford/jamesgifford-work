@@ -15,5 +15,7 @@ Route::get('/', 'PageController@index');
 
 Route::get('work', 'PageController@work');
 
+Route::get('projects', 'PageController@projects');
+
 Route::get('contact', 'ContactController@index');
 Route::post('contact', 'ContactController@send');
