@@ -23,9 +23,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
         parent::boot();
+
+        /**
+         * Route model binding for Post
+         */
+        Route::model('post', \App\Models\Post::class);
     }
 
     /**

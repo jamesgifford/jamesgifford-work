@@ -17,6 +17,16 @@ class Post extends Model
     ];
 
     /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    /**
      * The "booting" method of the model.
      *
      * @return void

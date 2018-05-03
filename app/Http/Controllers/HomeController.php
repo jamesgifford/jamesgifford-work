@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display the homepage.
@@ -23,34 +23,6 @@ class PageController extends Controller
             'blogPosts'     => $blogPosts,
             'workPosts'     => $workPosts,
             'projectPosts'  => $projectPosts
-        ]);
-    }
-
-    /**
-     * Display the work page.
-     *
-     * @return void
-     */
-    public function work()
-    {
-        $workPosts = Post::work()->get();
-
-        return view('pages.work')->with([
-            'workPosts' => $workPosts
-        ]);
-    }
-
-    /**
-     * Display the projects page.
-     *
-     * @return void
-     */
-    public function projects()
-    {
-        $projectPosts = Post::project()->get();
-
-        return view('pages.projects')->with([
-            'projectPosts' => $projectPosts
         ]);
     }
 }
