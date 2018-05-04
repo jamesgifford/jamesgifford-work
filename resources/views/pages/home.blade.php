@@ -19,7 +19,7 @@
 
 @section('content')
 
-<div id="blog-preview" class="my-5 py-5">
+<div id="blog-preview" class="my-5 py-5 d-none">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
@@ -39,7 +39,7 @@
             <div class="col-md-10">
                 <h2><a href="/blog/{{ $post->slug }}">{{ $post->title }}</a></h2>
                 <div class="date-text d-md-none">{{ $post->published_date }}</div>
-                <p class="lead">{!! $post->summary !!}</p>
+                <p class="lead">{!! $post->first_paragraph !!}</p>
             </div>
         </div>
     @endforeach
