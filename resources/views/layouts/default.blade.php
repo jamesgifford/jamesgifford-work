@@ -26,14 +26,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/">Home</a>
                         </li>
-                        <li class="nav-item d-none">
-                            <a class="nav-link" href="/blog">Blog</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/work">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/projects">Projects</a>
                         </li>
                         <li class="nav-item d-none">
                             <a class="nav-link" href="/about">About</a>
@@ -51,9 +45,20 @@
 
                 @yield('content')
 
-                <section class="">
-                    <!-- Contact call-to-action -->
-                </section>
+                <footer class="mt-5 pt-5 bg-dark">
+                    <div class="container">
+                        <div class="row text-center pb-5">
+                            <div class="col-md-12">
+                                <h1><a href="/contact" class="footer-contact btn btn-lg btn-primary mb-5">Contact Me</a></h1>
+                            </div>
+                        </div>
+                        <div class="row text-center pb-5">
+                            <div class="col-md-12">
+                                <p>Designed by James Gifford in Oregon with Laravel</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 
             </main>
 
