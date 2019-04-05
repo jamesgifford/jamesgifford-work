@@ -1,16 +1,10 @@
-<html>
-<head></head>
-<body style="background: #fff; color: #000;">
-<h1>Contact Form Submission</h1>
-<br />
-<h2>Domain:</h2>
-<p>jamesgifford.com</p>
-<br />
-<h2>Message:</h2>
-<p>{{ $content }}</p>
-<br />
-<h2>Date:</h2>
-<p><?= date('Y-m-d H:i:s') ?>
-<br />
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>James Gifford</title>
+    </head>
+    <body>
+        {{ $content }}
+    </body>
 </html>

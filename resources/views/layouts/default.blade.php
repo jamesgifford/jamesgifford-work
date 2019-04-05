@@ -8,6 +8,8 @@
 
         <title>@yield('title', config('app.name'))</title>
 
+        {!! htmlScriptTagJsApi() !!}
+
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
     <body>

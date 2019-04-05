@@ -131,7 +131,7 @@ class CoreWorkPostSeeder extends Seeder
             'image'         => 'work-cdbaby-logo2.png',
             'link'          => '',
             'published_at'  => '2018-04-11 00:00:00',
-            'is_featured'   => false
+            'is_featured'   => true
         ]);
 
 /*

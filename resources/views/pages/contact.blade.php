@@ -40,6 +40,10 @@
                         <label for="name">Message</label>
                     </div>
 
+                    <div class="form-label-group my-3">
+                        {!! htmlFormSnippet() !!}
+                    </div>
+
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
                     {{ csrf_field() }}
                 </form>
