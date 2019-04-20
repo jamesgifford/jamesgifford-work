@@ -29,7 +29,7 @@
                             <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/work">Work</a>
+                            <a class="nav-link" href="/resume">R&eacute;sum&eacute;</a>
                         </li>
                         <li class="nav-item d-none">
                             <a class="nav-link" href="/about">About</a>

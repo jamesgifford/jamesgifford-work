@@ -10754,7 +10754,7 @@ p.subtitle {
 #blog-preview p,
 #blog-page p,
 #work-preview p,
-#work-page p,
+#page-resume p,
 #project-preview p,
 #project-page p {
   font-size: 1.125rem;
@@ -10762,7 +10762,7 @@ p.subtitle {
 }
 
 #work-preview img,
-#work-page img {
+#page-resume img {
   max-height: 7rem;
   max-width: 8rem;
 }
@@ -10771,20 +10771,6 @@ p.subtitle {
 #projects-page img {
   max-height: 7rem;
   max-width: 8rem;
-}
-
-section#education img {
-  max-height: 4rem;
-  max-width: 5rem;
-}
-
-section#education p {
-  margin-bottom: 0;
-  font-weight: 300;
-}
-
-section#education span {
-  font-style: italic;
 }
 
 footer {
@@ -10796,6 +10782,10 @@ footer {
   margin-top: 1rem;
   padding: 1rem 2rem;
 }
+
+/**
+ *  Resume
+ */
 
 /* Abilities
 -----------------------------------------------------------------------------*/
@@ -10921,3 +10911,22 @@ section#skills a.thumbnail.active {
 }
 
 /* /Skills */
+
+/* Education
+-----------------------------------------------------------------------------*/
+
+section#education img {
+  max-height: 4rem;
+  max-width: 5rem;
+}
+
+section#education p {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+section#education span {
+  font-style: italic;
+}
+
+/* /Education */

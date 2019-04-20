@@ -59,7 +59,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h1>My Work</h1>
+                    <h1>My Experience</h1>
                 </div>
             </div>
             
@@ -77,7 +77,7 @@
 
             <div class="row text-center">
                 <div class="col-md-12">
-                   <a href="/work" class="btn btn-lg btn-outline-primary mb-5 mt-1">View my work history</a>
+                   <a href="/resume" class="btn btn-lg btn-outline-primary mb-5 mt-1">View my full r&eacute;sum&eacute;</a>
                 </div>
             </div>
         </div> <!-- /container -->
