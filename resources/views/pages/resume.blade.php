@@ -19,7 +19,7 @@
             <div class="row text-center">
                 <div class="col-md-12">
                     <h2 class="mb-3">My Abilities</h2>
-                    <p>I'm experienced in many aspects of software development</p>
+                    <p>I am experienced in all aspects of software development</p>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@
             <div class="row text-center">
                 <div class="col-md-12">
                     <h2 class="mb-3">My Skills</h2>
-                    <p>There are some the technologies I work with</p>
+                    <p>These are some of the technologies I work with</p>
                 </div>
             </div>
 
@@ -137,7 +137,7 @@
             <div class="row text-center">
                 <div class="col-md-12">
                     <h2 class="mb-3">My Experience</h2>
-                    <p>I've been fortunate to work with some great companies</p>
+                    <p>I have been fortunate to work with some great companies</p>
                 </div>
             </div>
             
@@ -162,7 +162,7 @@
             <div class="row text-center">
                 <div class="col-md-12 mb-5">
                     <h2 class="mb-3">My Education</h2>
-                    <p>I've earned several certificates over the years</p>
+                    <p>I have earned several certificates over the years</p>
                 </div>
             </div>
             
