@@ -14,7 +14,7 @@ class CoreWorkPostSeeder extends Seeder
         DB::table('posts')->insert([
             'slug'          => 'discogs',
             'title'         => 'Discogs',
-            'subtitle'      => 'Lead Web Developer, August 2018 to Present',
+            'subtitle'      => 'Lead Software Engineer, August 2018 to Present',
             'content'       => '<p>Discogs is on a mission to build the world\'s biggest and most comprehensive music database. With a connected marketplace, forums, and other community-driven resources Discogs brings people together to share their love of music with the world.</p><p>Discogs brought me on initially to help with the creation of new microservices to modernize and expand the functionality of their marketplace services. Using Laravel in a Docker environment I built a direct messaging service to improve communication options to marketplace contributors.</p><p>After this I joined a team working on API enhancements. Together we are working to improve the flexibility of the Discogs API to better support both internal and third-party services that communicate with our extensive music database and marketplace.</p>',
             'category'      => 'work',
             'image'         => 'work-discogs-logo.png',
@@ -26,7 +26,7 @@ class CoreWorkPostSeeder extends Seeder
         DB::table('posts')->insert([
             'slug'          => 'optinmonster',
             'title'         => 'OptinMonster',
-            'subtitle'      => 'Senior Web Developer, April 2017 to August 2018',
+            'subtitle'      => 'Senior Software Engineer, April 2017 to August 2018',
             'content'       => '<p>OptinMonster provides a powerful toolkit for converting website visitors into subscribers. The platform is highly customizable and can integrate with dozens of mailing list providers and analytics services to fit a customer\'s particular marketing requirements.</p> <p>I was brought on to the team at OptinMonster to both assist with implementing new features as well as provide support to current customers. The coding was done primarily in a highly customized WordPress setup with a few frameworks mixed in. One of the unique challenges with this project was to integrate with APIs of nearly every marketing platform available such as MailChimp, AWeber, and Google Analytics.</p> <p>We soon began work revamping the UI in order to add drag-and-drop functionality and other modern features. This effort grew in scope until it effected all aspects of the code and became a new version of the application. My contributions included redesigning the databse to accommodate new data structures and utilizing Laravel\'s Eloquent ORM to facilitate communication between the presentation and data layers.</p>',
             'category'      => 'work',
             'image'         => 'work-optinmonster-logo-alt.png',
