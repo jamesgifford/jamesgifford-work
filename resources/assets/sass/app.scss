@@ -8,6 +8,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+
+$slider-nav-color: #f9522d;
+
+
+
 a {
     color: inherit;
     font-weight: bold;
@@ -107,7 +112,7 @@ p.subtitle {
     font-weight: 100;
 }
 
-#blog-preview p, #blog-page p, #work-preview p, #page-resume p, #project-preview p, #project-page p {
+#blog-preview p, #blog-page p, #work-preview p, #page-resume p, #project-preview p, #project-page p, #testimonials-preview {
     font-size: 1.125rem;
     font-weight: 300;
 }
@@ -280,3 +285,122 @@ section#education span {
 }
 
 /* /Education */
+
+
+
+/* Testimonial
+-----------------------------------------------------------------------------*/
+
+.testimonial {
+    margin-bottom: 2rem;
+    margin: 0 auto 2.5rem;
+}
+
+.testimonial .quote {
+    font-size: 1.5rem;
+    margin: 0 auto 2rem;
+    max-width: 78%;
+}
+
+.testimonial .name {
+    font-weight: 700;
+    text-align: center;
+}
+.testimonial .position {
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* Slider
+-----------------------------------------------------------------------------*/
+
+.slider {
+    position: relative;
+}
+
+.slider input[name="slider-button"] {
+    display: none
+}
+
+.slider-nav {
+    margin: 0.25rem 0 3rem;
+    text-align: center;
+    z-index: 1;
+}
+@media screen and (min-width: 769px) {
+    .slider-nav {
+        margin: 1rem 0 3.5rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .slider-nav {
+        margin: 1rem 0 .5rem;
+    }
+}
+
+.slider-nav label {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin: 0 6px;
+    transition: background-color 0.25s;
+    width: 15px;
+}
+
+.slider-slides {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-slides .slider-inner {
+    transition: margin 0.5s;
+    width: 500%;
+}
+
+.slider-slides .slider-item {
+    float: left;
+    width: 20%;
+}
+
+#slide-1:checked ~ .slider-nav label[for="slide-1"] {
+    background-color: $slider-nav-color;
+    border: 2px solid $slider-nav-color;
+}
+#slide-1:checked ~ .slider-slides .slider-inner {
+    margin-left: 0%;
+}
+
+#slide-2:checked ~ .slider-nav label[for="slide-2"] {
+    background-color: $slider-nav-color;
+    border: 2px solid $slider-nav-color;
+}
+#slide-2:checked ~ .slider-slides .slider-inner {
+    margin-left: -100%;
+}
+
+#slide-3:checked ~ .slider-nav label[for="slide-3"] {
+    background-color: $slider-nav-color;
+    border: 2px solid $slider-nav-color;
+}
+#slide-3:checked ~ .slider-slides .slider-inner {
+    margin-left: -200%;
+}
+
+#slide-4:checked ~ .slider-nav label[for="slide-4"] {
+    background-color: $slider-nav-color;
+    border: 2px solid $slider-nav-color;
+}
+#slide-4:checked ~ .slider-slides .slider-inner {
+    margin-left: -300%;
+}
+
+#slide-5:checked ~ .slider-nav label[for="slide-5"] {
+    background-color: $slider-nav-color;
+    border: 2px solid $slider-nav-color;
+}
+#slide-5:checked ~ .slider-slides .slider-inner {
+    margin-left: -400%;
+}

@@ -115,4 +115,39 @@
     </div>
 @endif
 
+@if (true)
+    <div id="testimonials-preview" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Testimonials</h1>
+                </div>
+            </div>
+
+            <div class="slider my-5">                     
+            @for ($i = 1; $i <= count($testimonialPosts); $i++)
+                <input id="slide-{{ $i }}" type="radio" name="slider-button"{{ $i == 1 ? 'checked=""' : '' }}>
+            @endfor
+                <div class="slider-slides">
+                    <div class="slider-inner">
+                    @foreach ($testimonialPosts as $post)
+                        <div class="slider-item">
+                            <div class="testimonial">
+                                {!! $post->content !!}
+                            </div>
+                        </div>
+                    @endforeach
+                    </div>
+                </div> <!-- /slider-slides -->
+                <div class="slider-nav">
+                @for ($i = 1; $i <= count($testimonialPosts); $i++)
+                    <label for="slide-{{ $i }}"></label>
+                @endfor
+                </div>
+            </div> <!-- /slider -->
+
+        </div> <!-- /container -->
+    </div>
+@endif
+
 @endsection
