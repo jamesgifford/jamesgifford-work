@@ -18,11 +18,13 @@ class HomeController extends Controller
         $blogPosts = Post::blog()->featured()->get();
         $workPosts = Post::work()->featured()->get();
         $projectPosts = Post::project()->featured()->get();
+        $testimonialPosts = Post::testimonial()->featured()->get();
 
         return view('pages.home')->with([
-            'blogPosts'     => $blogPosts,
-            'workPosts'     => $workPosts,
-            'projectPosts'  => $projectPosts
+            'blogPosts'         => $blogPosts,
+            'workPosts'         => $workPosts,
+            'projectPosts'      => $projectPosts,
+            'testimonialPosts'  => $testimonialPosts
         ]);
     }
 }

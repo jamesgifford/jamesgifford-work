@@ -15,5 +15,6 @@ class CoreDatabaseSeeder extends Seeder
         $this->call(CoreBlogPostSeeder::class);
         $this->call(CoreWorkPostSeeder::class);
         $this->call(CoreProjectPostSeeder::class);
+        $this->call(CoreTestimonialPostSeeder::class);
     }
 }

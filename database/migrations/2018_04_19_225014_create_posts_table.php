@@ -21,8 +21,8 @@ class CreatePostsTable extends Migration
             $table->text('content');
             $table->boolean('is_featured')->default(false);
             $table->string('category');
-            $table->string('image');
-            $table->string('link');
+            $table->string('image')->nullable()->default(null);
+            $table->string('link')->nullable()->default(null);
             $table->timestamp('published_at');
             $table->timestamps();
         });

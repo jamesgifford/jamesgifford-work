@@ -85,6 +85,17 @@ class Post extends Model
     }
 
     /**
+     * Get only testimonial posts.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeTestimonial($query)
+    {
+        return $query->where('category', 'testimonial');
+    }
+
+    /**
      * Get the first paragraph from the post content.
      *
      * @return string
